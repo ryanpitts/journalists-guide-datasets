@@ -112,7 +112,7 @@ Summary levels can be [incredibly granular](http://factfinder2.census.gov/help/e
 
 * 310: Metropolitan/Micropolitan Statistical Area
 
-    Metropolitan statistical areas represent an urbanized core with a population of at least 50,000. Micropolitan statistical areas have a population of at least 10,000 but less than 50,000.
+    Metropolitan statistical areas represent an urbanized core with a population of at least 50,000. Micropolitan statistical areas have a population of at least 10,000 but less than 50,000. The general census term for both metropolitan and micropolitan SAs is "core-based statistical areas" or CBSAs. By definition, CBSAs comprise a specific list of counties, although which counties are included in a CBSA changes based on population and economic change.
 
 * 330: Combined Statistical Area
 
