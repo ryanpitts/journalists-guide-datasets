@@ -98,7 +98,13 @@ Summary levels can be [incredibly granular](http://factfinder2.census.gov/help/e
 
 * 050: County
 
+* 060: County Subdivision
+
+    Different states divide counties in different ways for different reasons, so whether or not this summary level matters to a journalist is dependent on the states being investigated. For example, in New Jersey, county subdivisions provide data for more "town-like" places than the "place" (160) summary level.
+
 * 140: Census Tract
+
+    Fairly stable census-defined geographies with a target population of about 4000. Before every decennial census, the Census Bureau reviews the census tract map, and sometimes splits or joins tracts which have gone far from that target. For this reason, comparison of census tracts over time must be handled with caution. 
 
 * 150: Block Group
 
@@ -106,13 +112,13 @@ Summary levels can be [incredibly granular](http://factfinder2.census.gov/help/e
 
 * 160: Place
 
-    The Census Bureau term for what you'd commonly refer to as a city
+    The Census Bureau term for what you'd commonly refer to as a city. Some non-incorporated areas, known as "Census designated places" are also included in this tabulation.
 
 * 250: American Indian Area/Alaska Native Area/Hawaiian Home Land
 
 * 310: Metropolitan/Micropolitan Statistical Area
 
-    Metropolitan statistical areas represent an urbanized core with a population of at least 50,000. Micropolitan statistical areas have a population of at least 10,000 but less than 50,000.
+    Metropolitan statistical areas represent an urbanized core with a population of at least 50,000. Micropolitan statistical areas have a population of at least 10,000 but less than 50,000. The general census term for both metropolitan and micropolitan SAs is "core-based statistical areas" or CBSAs. By definition, CBSAs comprise a specific list of counties, although which counties are included in a CBSA changes based on population and economic change.
 
 * 330: Combined Statistical Area
 
@@ -129,6 +135,8 @@ Summary levels can be [incredibly granular](http://factfinder2.census.gov/help/e
     Commonly referred to as a [PUMA](https://www.census.gov/geo/reference/puma.html). These are geographically contiguous areas with a population of at least 100,000.
 
 * 860: 5-digit ZIP Code Tabulation Area
+
+   Technically, ZIP Codes are not defined geographically. However, most ZIP Codes can be drawn on a map, and they are a more familiar reference than Census tracts, so by popular demand, the Census Bureau produces data that fits people's intuitive sense of how ZIP Codes work.
 
 * 950: School District (Elementary)
 
