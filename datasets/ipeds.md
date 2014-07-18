@@ -68,7 +68,10 @@ Compare Individual Institutions
 -------------------------------
 
 If you're doing research, you're probably going to want to pull a lot of
-variables about a lot of institutions.
+variables about a lot of institutions. You should keep datafiles (`*.uid` for
+institutions, and `*.mvl` for variables) offline so you can repeatedly generate
+the same reports quickly. Don't be tempted to pick some institutions, pick some
+variables, and then run away.
 
 ### Picking Institutions
 
@@ -79,3 +82,47 @@ institution selection process. Luckily, the files IPEDS hands out are in plain
 text and easy to manipulate in your favorite text editor/excel. The *.uid files
 are a pipe (`|`) separated file format with the columns: ID, Institution Name,
 City, and State. But you only need the ID column.
+
+### Picking Variables
+
+This is similar to picking institutions. Use the "Create/Download a list of
+variables" interface to pick a small number of related variables and save them
+to a MVL file.
+
+#### The Structure of the MVL File
+
+The MVL file is a pipe (`|`) separated text file. There's a code, short name,
+category, long name, and then a bunch of other fields. So if you saw these
+lines:
+
+    DRVEF2009_RV|DVEF01|Fall enrollment/retention rates|Adult age (25-64) enrollment, all students|||||||||||||09.23401|.|Cont|TN|N||745|||||
+    DRVEF2010|DVEF01|Fall enrollment/retention rates|Adult age (25-64) enrollment, all students|||||||||||||10.23401|.|Cont|TN|N||745|||||
+
+You could interpret it as:
+
+* `DRVEF2009_RV` - `DRV` prefix means this is a **derived variable**. You'll
+  notice it references a specific year. The `_RV` suffix means this variable
+  was revised. This is the unique name for this variable for this year.
+* `DVEF01` - This is a short name, like a slug, that describes this variable.
+  See how both lines in the same share the same short name, category, and long
+  name?
+* `Fall enrollment/retention rates` - This is the category you'll find this
+  variable.
+* `Adult age (25-64) enrollment, all students` - This is a long name for this
+  variable. Sometimes, you can often find a long description in the [glossary].
+  For example, here's the [glossary entry for Fall Enrollment
+  (EF)](http://nces.ed.gov/ipeds/glossary/index.asp?id=802) and [Retention
+  rate](http://nces.ed.gov/ipeds/glossary/?charindex=R).
+* the rest... I don't know.
+
+### Generating Reports
+
+_TODO_ what settings do you pick?
+
+### Reading the Reports
+
+_TODO_ expect tons of rows, need to build a parser just for the reports
+
+### How to Update Your Old Reports
+
+_TODO_
