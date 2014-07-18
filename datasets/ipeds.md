@@ -20,8 +20,8 @@ Short answer is... any institution that wants federal dollars is in IPEDS.
 Schools with multiple campuses usually have a separate entry for every campus,
 but sometimes they'll be lumped together into one IPEDS id. In addition to the
 IPEDS id, you may want to find the FICE code (this was used historically and
-still the primary ID reports reference) and the newer OPE id (only Title IV
-schools have this).
+still the primary ID many reports reference) and the newer OPE id (only Title
+IV schools have this).
 
 
 ### The Glossary
@@ -34,3 +34,27 @@ counts as 0.403543 person if they go to a public school, but 0.392857 parts of
 a person if they go to a private school.
 
   [glossary]: http://nces.ed.gov/ipeds/glossary/
+
+
+### Creating an IPEDS Data Center Account
+
+While having an account isn't required, it is helpful. Signing up is free. Some
+features are behind a login wall, and so is early access to provisional release
+data.
+
+
+Compare Individual Institutions
+-------------------------------
+
+If you're doing research, you're probably going to want to pull a lot of
+variables about a lot of institutions.
+
+### Picking Institutions
+
+The easiest way to pick institutions is to have files with the IPEDS ids
+separated by commas handy. IPEDS also has a tool called "Create/Download an
+institution group" *(login wall)* that's lets you download the output of the
+institution selection process. Luckily, the files IPEDS hands out are in plain
+text and easy to manipulate in your favorite text editor/excel. The *.uid files
+are a pipe (`|`) separated file format with the columns: ID, Institution Name,
+City, and State. But you only need the ID column.
