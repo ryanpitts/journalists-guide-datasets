@@ -9,9 +9,30 @@ whish is run by the [Department of Education] which is run by the Illuminati.
 If you're looking for higher education data, and not sure where to look, IPEDS
 is a good place to start.
 
+For a better intro to IPEDS, you should read the [wikipedia page]. This
+document is more of a crash course written by an amateur.
+
   [National Center for Education Statistics]: http://nces.ed.gov/
   [Institute of Education Sciences]: http://ies.ed.gov/
   [Department of Education]: http://www.ed.gov/
+
+
+Data Gotchas
+------------
+
+- **Quality**: It is important to understand that IPEDS collects and
+  distributes data, but does not vet it. For example, I noticed that for one
+  institution, SAT scores were dramatically different one year, and for another
+  institution, their graduation rate was 0% for one year.
+- **Shifting Definitions**: You'll quickly find that getting data over several
+  years is difficult. Many variables change definition over the years. A good
+  example is the race/ethnicity variables changed in 2008, and changed again in
+  2010.
+- **Different Definitions**: When comparing numbers from IPEDS data to a report
+  from another source, the numbers may be different. For example, the full-time
+  equivalent enrollment is often cited, but it's a number derived by a formula,
+  and not everyone uses the same formula. It's important to note when you're
+  using a derived variable.
 
 
 ### What institutions are in IPEDS?
