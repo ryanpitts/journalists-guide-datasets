@@ -3,7 +3,7 @@ Federal Election Commission
 
 The [Federal Election Commission](https://www.fec.gov/) provides data about candidates for federal office (U.S. House, U.S. Senate and President), committees formed by those candidates and groups to spend money on federal elections, and filings reporting contributions and expenditures made by both candidates and committees. It also maintains summary data about campaign finance, data about campaign finance law enforcement and federal election results.
 
-The FEC is not the only federal entity that has a role in the campaign finance system; Senate candidates and party committees file reports first to the Secretary of the Senate, which then forwards them to the FEC. The Internal Revenue Service provides data on the finances of some political groups that raise and spend money on certain state elections. But the FEC is the main repository of data for federal campaign finance activity, and it has several different types of data for download and use in reporting and analysis.
+The FEC is not the only federal entity that has a role in the campaign finance system; Senate candidates and party committees file reports first to the Secretary of the Senate, which then forwards them to the FEC (although some candidates voluntarily file electronic reports). The Internal Revenue Service provides data on the finances of some political groups that raise and spend money on certain state elections. But the FEC is the main repository of data for federal campaign finance activity, and it has several different types of data for download and use in reporting and analysis.
 
 In This Guide
 =============
@@ -41,6 +41,8 @@ Most committees registered with the FEC are required to file all of their report
 Electronic filings can be found via the [FEC's search form](http://www.fec.gov/finance/disclosure/efile_search.shtml), which has a number of options for filtering the results to a particular committee, a particular date or more. The search results include the option to View or Download individual filings, which present the data in HTML and delimited formats, respectively. Individual filings contain all of the records for that filing, stacked on top of each other in varying delimited layouts ([A zip file containing the formats is on FEC.gov](http://www.fec.gov/elecfil/eFilingFormats.zip).) You can open a .fec file in a text editor or spreadsheet, but be aware of the variable layouts within a single file (and across time). This is precisely why we developed Fech to handle electronic filings. 
 
 Even though committees file reports [on a regular schedule](http://www.fec.gov/info/report_dates.shtml), electronic filings occur nearly every day of the year. Some are amendments of previous filings, others are filed in advance (or after) a deadline, and others are filed as changes warrant. Filings that are amendments are indicated in the data, and serve as complete replacements for the original filings.
+
+Although it is possible to parse electronic filings with most languages' CSV libraries, there are several FEC-specific libraries, including [Fech](https://github.com/NYTimes/Fech) (Ruby) and [FEC Scraper Toolbox](https://github.com/cschnaars/FEC-Scraper-Toolbox) (Python).
 
 Parsing Electronic Filings
 ===========
