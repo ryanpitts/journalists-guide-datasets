@@ -3,7 +3,7 @@ Federal Election Commission
 
 The [Federal Election Commission](https://www.fec.gov/) provides data about candidates for federal office (U.S. House, U.S. Senate and President), committees formed by those candidates and groups to spend money on federal elections, and filings reporting contributions and expenditures made by both candidates and committees. It also maintains summary data about campaign finance, data about campaign finance law enforcement and federal election results.
 
-The FEC is not the only federal entity that has a role in the campaign finance system; Senate candidates and party committees file reports first to the Secretary of the Senate, which then forwards them to the FEC (although some candidates voluntarily file electronic reports). The Internal Revenue Service provides data on the finances of some political groups that raise and spend money on certain state elections. But the FEC is the main repository of data for federal campaign finance activity, and it has several different types of data for download and use in reporting and analysis.
+The FEC is not the only federal entity that has a role in the campaign finance system; Senate candidates and party committees file reports first to the Secretary of the Senate, which then forwards them to the FEC (although some candidates [voluntarily file electronic reports](http://docquery.fec.gov/senate/)). The Internal Revenue Service provides data on the finances of some political groups that raise and spend money on certain state elections. But the FEC is the main repository of data for federal campaign finance activity, and it has several different types of data for download and use in reporting and analysis.
 
 In This Guide
 =============
@@ -17,6 +17,7 @@ In This Guide
 	* [Summary files](#summary-files)
 	* [Detailed files](#detailed-files)
 * [Data Catalog](#data-catalog)
+* [The More You Know](#the-more-you-know)
 
 Overview
 ==========
@@ -206,3 +207,18 @@ Data Catalog
 ========
 
 The data catalog is a collection of some of the summary files available via FTP as well as other files covering disbursements, independent expenditures and leadership PACs, among other subjects. The files are available in CSV or XML formats, and cover single cycles (mostly 2010 and 2012, although the summary files also include 2008 data). One advantage of the data catalog files is that they can be called directly from a web application without having to unzip them, but there are some drawbacks. [Independent Expenditures](http://fec.gov/data/IndependentExpenditure.do?format=html&election_yr=2014) include both original transactions and amendments, resulting in duplicate records in those cases. In another example, the [listing of leadership PACs](http://fec.gov/data/Leadership.do?format=html&election_yr=2014) contains an entry for the corporate PAC of Interactive Corp. Most of the data catalog files are updated daily, and they are the one place where it's possible to find [candidate disbursements](http://fec.gov/data/CandidateDisbursement.do?format=html&election_yr=2014) in statewide or district-level files. The files themselves are stored on the FEC's FTP server, so it's possible to grab them directly. The FEC also maintains [a blog about its data](http://fec.gov/blog/) that includes changes and additions to its data offerings.
+
+The More You Know
+==========
+
+* The electronic filings are technically unofficial until the FEC processes them, and they will contain typos or incomplete information (or not be filed properly, particularly when it comes to lump sum expenditures, which must report both an unitemized total and then most itemizations. Think of a single credit card payment covering multiple transactions.). The agency can take several weeks or more to process filings from significant filing dates, such as quarterly deadlines. Even after the FEC processes filings and places transactions into the bulk FTP data, there may be errors - the most common is misidentified committee IDs, as electronic filings are not required to include committee or candidate IDs.
+
+* The time lag for FEC processing is the biggest practical concern, but there are other issues with timing, particularly as it relates to filing schedules. Committees usually file either monthly or quarterly, with monthly deadlines on the 20th of each month and quarterly deadlines on April, July and October 15, followed by a year-end report due on Jan. 31. There also are reports due just before and after a primary, runoff, special or general election for any committee involved in that election.
+
+* You'll also come across joint committees, which are almost required for most competitive races, especially Senate ones. These committees can solicit larger donations and then divide them among multiple recipients. Here's an example: a donor can give $40,000 to the "Ryan Pitts Victory Fund," of which $5,200 will go to Ryan's campaign and the remainder to Ryan's party national or Senate committee. The original donation and the ultimate receipts are *both* reported, so as a data user you will need to avoid double-counting. Depending on what you want to know, you should use either the original donation or the divided shares.
+
+* State and local party committees can have federal and state accounts, but the FEC filing represents the federal portion (although it also includes joint spending, in which both the federal and state accounts pay for some expenses). FEC rules apply to donations to federal accounts of state & local party committees, but states have different rules for state accounts.
+
+* Donors who are unaware of contribution limits and donate more money than is permitted will still have their names and contributions reported in FEC filings. Committees have to do this, and then they refund the money, usually in the same filing. Refunds should be classified as expenditures, but some committees list them as contributions with negative amounts.
+
+* The person at the FEC you want to talk to in case of data issues is Paul Clark (pcclark@fec.gov). The press office is typically friendly and responsive for general questions.
