@@ -89,6 +89,19 @@ This is similar to picking institutions. Use the "Create/Download a list of
 variables" interface to pick a small number of related variables and save them
 to a MVL file.
 
+Variables are unique for every year. There's not one variable for "retention
+rates". There's one variable for "retention rates 2012" and another for
+"retention rates 2011" and another for 2010 and so on. When you're planning
+what to get, it's helpful to go in two passes. Once to get a survey of what the
+general variables you want to use, and again to get the specific variable name
+for every year.
+
+There are so many variables that you should have your own local copy so you can
+quickly generate MVL files on demand without having to go through the slower
+IPEDS web interface. There's even a [Django
+app](https://github.com/texastribune/ipeds_reporter) just for working with
+variables.
+
 #### The Structure of the MVL File
 
 The MVL file is a pipe (`|`) separated text file. There's a code, short name,
@@ -101,8 +114,9 @@ lines:
 You could interpret it as:
 
 * `DRVEF2009_RV` - `DRV` prefix means this is a **derived variable**. You'll
-  notice it references a specific year. The `_RV` suffix means this variable
-  was revised. This is the unique name for this variable for this year.
+  notice it references a specific year. `EF` represents the general category.
+  `2009` is the academic year. The `_RV` suffix means this variable was
+  revised. This is the unique name for this variable for this year.
 * `DVEF01` - This is a short name, like a slug, that describes this variable.
   See how both lines in the same share the same short name, category, and long
   name?
