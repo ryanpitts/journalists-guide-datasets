@@ -42,8 +42,6 @@ Electronic filings can be found via the [FEC's search form](http://www.fec.gov/f
 
 Even though committees file reports [on a regular schedule](http://www.fec.gov/info/report_dates.shtml), electronic filings occur nearly every day of the year. Some are amendments of previous filings, others are filed in advance (or after) a deadline, and others are filed as changes warrant. Filings that are amendments are indicated in the data, and serve as complete replacements for the original filings.
 
-Although it is possible to parse electronic filings with most languages' CSV libraries, there are several FEC-specific libraries, including [Fech](https://github.com/NYTimes/Fech) (Ruby) and [FEC Scraper Toolbox](https://github.com/cschnaars/FEC-Scraper-Toolbox) (Python).
-
 Parsing Electronic Filings
 ===========
 
@@ -79,6 +77,8 @@ Other programming languages should have similar facilities for setting the file'
 (The FEC also provides tools for converting the ASCII 28-delimited files into CSVs [here](http://www.fec.gov/support/DataConversionTools.shtml), though I can't vouch for how useful these might be.)
 
 If you know only the filing's ID and prefer to download the CSV, the URL for accessing the link to that version would look like [http://query.nictusa.com/cgi-bin/dcdev/forms/DL/775739/](http://query.nictusa.com/cgi-bin/dcdev/forms/DL/775739/) -- just substitute the ID of the filing you're interested in for 775739.
+
+Although it is possible to parse electronic filings with most languages' CSV libraries, there are several FEC-specific libraries, including [Fech](https://github.com/NYTimes/Fech) (Ruby), [read_FEC](https://github.com/jsfenfen/read_FEC) (Python) and [FEC Scraper Toolbox](https://github.com/cschnaars/FEC-Scraper-Toolbox) (Python).
 
 Headers
 =========
@@ -154,7 +154,6 @@ The FEC has offered bulk data for years, and [its offerings](http://www.fec.gov/
 
 Bulk data files are contained inside zip files stored on the FTP server, so retrieving them via a web application requires several steps. The FTP data is updated early Monday morning each week, and previous cycles are updated as well, since committees can amend filings from an earlier election cycle.
 
-
 Summary files
 ========
 
@@ -168,7 +167,7 @@ The [PAC summary file](ftp://ftp.fec.gov/FEC/2012/webk12.zip) provides the lates
 
 The FEC previously used to generate summary files at the end of the election cycle for candidates and PACs that included totals for different types of PACs, but discontinued these files after the 2005-06 cycle. Files are available from 1979-80 through 2005-06. Party committee-only summary files exist from the 1991-92 cycle through the 2003-04 cycle. One of the most useful files, which contained a record for each combination of candidate recipient and PAC contributor/independent spender, covers the 1991-92 cycle through the 2001-02 cycle. A similar file exists for candidate-party activities during the same time period.
 
-These summary files had been stored in fixed-width format but were converted to pipe-delimited format in late July 2012.
+These summary files had been stored in fixed-width format but were converted to pipe-delimited format in late July 2012. [Fech-FTP](https://github.com/dwillis/fech-ftp) is a Ruby library that wraps many of the summary files and some of the detailed files described below. [fecmaster](https://github.com/lukerosiak/fecmaster) is a Python library for downloading and importing the bulk files.
 
 There's one more thing to be aware of: the way that the FEC used to store its data (detailed and summary) relied on the use of [an "overpunch" character](http://www.fec.gov/finance/disclosure/ftpsum.shtml#overpunch) to represent negative amounts. This [recently changed for the detailed contribution files](http://www.fec.gov/blog/disclosure/entry/indiv_oth_and_pas2_file) and for the candidate and committee files, but it's possible that older summary files still contain such characters, and that the amount fields should be imported as text and then converted to numeric columns, accounting for negative amounts. There is a tutorial for [working with the FTP files using Microsoft Access](http://www.fec.gov/finance/disclosure/working_with_data_files.pdf).
 
@@ -203,8 +202,7 @@ Any Transaction from One Committee to Another
 [This file](http://www.fec.gov/finance/disclosure/metadata/DataDictionaryCommitteetoCommittee.shtml) contains a row for each transaction between two committees, regardless of whether either committee is a candidate committee or not. For example, this file includes contributions from a corporate PAC to a national party committee in addition to contributions to candidate committees. The list of [transaction types](http://www.fec.gov/finance/disclosure/metadata/DataDictionaryTransactionTypeCodes.shtml) describes the kind of transaction each row represents. The quirk here is that in many cases, both sides of the transaction get separate records: one for the committee making the contribution (usually beginning with 2X) and another for the committee receiving the contribution (usually beginning with 1X). Using this file for SQL queries means including transaction type in some manner in pretty much every query; which types you want depends on a couple of factors, such as timeliness (contributing committees can file before recipient committees) or completeness (a recipient committee usually is the definitive account of what it has gotten).
 
 
-
 Data Catalog
 ========
 
-The data catalog is a collection of some of the summary files available via FTP as well as other files covering disbursements, independent expenditures and leadership PACs, among other subjects. The files are available in CSV or XML formats, and cover single cycles (mostly 2010 and 2012, although the summary files also include 2008 data). One advantage of the data catalog files is that they can be called directly from a web application without having to unzip them, but there are some drawbacks. [Independent Expenditures](http://fec.gov/data/IndependentExpenditure.do?format=html&election_yr=2012) include both original transactions and amendments, resulting in duplicate records in those cases. In another example, the [listing of leadership PACs](http://fec.gov/data/Leadership.do?format=html&election_yr=2012) contains an entry for the corporate PAC of Interactive Corp. Most of the data catalog files are updated daily, and they are the one place where it's possible to find [candidate disbursements](http://fec.gov/data/CandidateDisbursement.do?format=html&election_yr=2012) in statewide or district-level files. The files themselves are stored on the FEC's FTP server, so it's possible to grab them directly. The FEC also maintains [a blog about its data](http://fec.gov/blog/) that includes changes and additions to its data offerings.
+The data catalog is a collection of some of the summary files available via FTP as well as other files covering disbursements, independent expenditures and leadership PACs, among other subjects. The files are available in CSV or XML formats, and cover single cycles (mostly 2010 and 2012, although the summary files also include 2008 data). One advantage of the data catalog files is that they can be called directly from a web application without having to unzip them, but there are some drawbacks. [Independent Expenditures](http://fec.gov/data/IndependentExpenditure.do?format=html&election_yr=2014) include both original transactions and amendments, resulting in duplicate records in those cases. In another example, the [listing of leadership PACs](http://fec.gov/data/Leadership.do?format=html&election_yr=2014) contains an entry for the corporate PAC of Interactive Corp. Most of the data catalog files are updated daily, and they are the one place where it's possible to find [candidate disbursements](http://fec.gov/data/CandidateDisbursement.do?format=html&election_yr=2014) in statewide or district-level files. The files themselves are stored on the FEC's FTP server, so it's possible to grab them directly. The FEC also maintains [a blog about its data](http://fec.gov/blog/) that includes changes and additions to its data offerings.
