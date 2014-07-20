@@ -131,7 +131,20 @@ You could interpret it as:
 
 ### Generating Reports
 
-_TODO_ what settings do you pick?
+The reason why you'll want to quickly make your own MVL files is that when you
+use "Compare Individual Institutions", you can only use 250 variables at a
+time. If you're just trying to get standardized test scores over a few years,
+you won't have room to any more variables. You life will be a lot easier if you
+do one at most metric per report.
+
+1. Select Institutions - Use the `UID` file or comma separated IDs you saved
+   earlier
+2. Select Variables - Use the `MVL` file you saved earlier or generated
+   yourself
+3. Output - To get the format that's easiest for a program to parse, choose
+   "Both Institution name and UnitID" and "Download in comma separated format".
+   You can go back and choose different settings later easily because you have
+   your `UID` and `MVL` files saved.
 
 ### Reading the Reports
 
