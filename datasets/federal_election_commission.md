@@ -18,6 +18,7 @@ In This Guide
 	* [Detailed files](#detailed-files)
 * [Data Catalog](#data-catalog)
 * [The More You Know](#the-more-you-know)
+* [Authors](#authors)
 
 Overview
 ==========
@@ -222,3 +223,10 @@ The More You Know
 * Donors who are unaware of contribution limits and donate more money than is permitted will still have their names and contributions reported in FEC filings. Committees have to do this, and then they refund the money, usually in the same filing. Refunds should be classified as expenditures, but some committees list them as contributions with negative amounts.
 
 * The person at the FEC you want to talk to in case of data issues is Paul Clark (pcclark@fec.gov). The press office is typically friendly and responsive for general questions.
+
+Authors
+==========
+
+Derek Willis has been using federal campaign finance data since 1996, when he helped report on soft money donors in Florida for The Palm Beach Post. He is the co-author [an IRE book on covering campaign finance](http://www.amazon.com/Unstacking-Deck-Reporters-Campaign-Finance/dp/0976603756), researched [political non-profits](http://www.publicintegrity.org/2003/09/25/5564/silent-partners-special-report) for The Center for Public Integrity and developed The New York Times [Campaign Finance API](http://developer.nytimes.com/docs/campaign_finance_api/). Willis currently uses FEC data to write stories for [The Upshot](http://www.nytimes.com/upshot/). Reach him @derekwillis.
+
+Aaron Bycoffe is data editor at The Huffington Post, where he has used FEC data to [find donors who have exceeded legal limits](http://www.huffingtonpost.com/2013/07/22/campaign-contribution-limits_n_3607672.html) and to build interactives. He previously worked at The Sunlight Foundation, where he tracked [super PACs](https://sunlightfoundation.com/blog/2011/08/01/super-pacs-raise-combined-26-million-first-half-year/) and other campaign finance vehicles. He's at @bycoffe.
