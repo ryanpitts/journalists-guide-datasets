@@ -18,6 +18,7 @@ In This Guide
 * [Margins of error](#margins-of-error)
 * [Summary levels](#summary-levels)
 * [Finding ACS data](#finding-acs-data)
+* [Authors](#authors)
 
 Releases
 ========
@@ -155,3 +156,8 @@ Finding ACS data
 The Census Bureau provides [a range of products](https://www.census.gov/data/data-tools.html) based on ACS data, the most comprehensive of which is [American FactFinder](http://factfinder2.census.gov/faces/nav/jsf/pages/index.xhtml). Bulk data downloads are also available [directly](http://www2.census.gov/) or [via FTP](ftp://ftp2.census.gov/). American FactFinder isn't particularly easy to navigate, however, and bulk downloads require some complex joins before you can begin to look at the data.
 
 You may have an easier time using [Census Reporter](http://censusreporter.org), a website built specifically for reporters, editors and newsroom developers interested in using ACS data. Census Reporter is a Knight News Challenge-funded project, and includes profile pages for all census geographies, comparison tools to help you explore tables and analyze collections of places, and visualizations for a more useful first look at the data.
+
+Authors
+=======
+
+Ryan Pitts is director of code for [Knight-Mozilla OpenNews](http://opennews.org/), and Joe Germuska is chief nerd for [Knight Lab at Northwestern University](http://knightlab.northwestern.edu/). After working with Census data for newsroom stories and projects like [this 2010 decennial Census explorer](http://data.spokesman.com/census/2010/washington/) and [census.ire.org](http://census.ire.org), they were part of the team who built [Census Reporter](http://censusreporter.org).
