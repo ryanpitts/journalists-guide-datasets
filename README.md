@@ -5,3 +5,4 @@ A collection of introductions to various datasets, giving journalists some frien
 
 ## Datasets
 * [American Community Survey](/datasets/american_community_survey.md)
+* [Federal Election Commission](/datasets/federal_election_commission.md)
