@@ -150,7 +150,13 @@ do one at most metric per report.
 
 ### Reading the Reports
 
-_TODO_ expect tons of rows, need to build a parser just for the reports
+The CSVs generated are one row per institution, and one column per variable.
+
+#### Reports over time
+
+The easiest workflow is limit reports to one metric, that way you just have to
+extract the year. If you put multiple metrics in one report, you have to group
+the columns by variable name first, and then extract the year.
 
 ### How to Update Your Old Reports
 
