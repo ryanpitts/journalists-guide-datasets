@@ -117,14 +117,14 @@ You could interpret it as:
   notice it references a specific year. `EF` represents the general category.
   `2009` is the academic year. The `_RV` suffix means this variable was
   revised. This is the unique name for this variable for this year.
-* `DVEF01` - This is a short name, like a slug, that describes this variable.
-  See how both lines in the same share the same short name, category, and long
-  name?
+* `DVEF01` - This is the short variable name, like a slug, that describes this
+  variable. See how both lines in the same share the same short name, category,
+  and long name?
 * `Fall enrollment/retention rates` - This is the category you'll find this
   variable.
-* `Adult age (25-64) enrollment, all students` - This is a long name for this
-  variable. Sometimes, you can often find a long description in the [glossary].
-  For example, here's the [glossary entry for Fall Enrollment
+* `Adult age (25-64) enrollment, all students` - This is the long variable name
+  for this variable. Sometimes, you can often find a long description in the
+  [glossary]. For example, here's the [glossary entry for Fall Enrollment
   (EF)](http://nces.ed.gov/ipeds/glossary/index.asp?id=802) and [Retention
   rate](http://nces.ed.gov/ipeds/glossary/?charindex=R).
 * the rest... I don't know.
@@ -144,7 +144,9 @@ do one at most metric per report.
 3. Output - To get the format that's easiest for a program to parse, choose
    "Both Institution name and UnitID" and "Download in comma separated format".
    You can go back and choose different settings later easily because you have
-   your `UID` and `MVL` files saved.
+   your `UID` and `MVL` files saved. Using the "Short variable name" will make
+   the CSV file easier to process. You can get the long variable name by cross-
+   referencing from a MVL file.
 
 ### Reading the Reports
 
