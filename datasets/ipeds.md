@@ -160,4 +160,5 @@ the columns by variable name first, and then extract the year.
 
 ### How to Update Your Old Reports
 
-_TODO_
+The easiest way to update reports is to modify the `UID` and `MVL` files and
+generate a new report.
