@@ -8,11 +8,37 @@ The IPEDS collection is mandatory for any institution that participates in [fede
 In This Guide
 =============
 
+* [Universe](#universe)
+* [Surveys](#surveys)
+  * [Fall collection](#fall-collection)
+  * [Winter collection](#winter-collection)
+  * [Spring collection](#spring-collection)
 * [Authors](#authors)
 
-**TODO**: Add more to the above table of contents.
+Universe
+========
 
-**TODO**: Add items.
+TK
+
+Surveys
+=======
+
+There are nine survey components within IPEDS, each collected at a specific time of the year:
+
+Fall collection
+---------------
+
+TK
+
+Winter collection
+---------------
+
+TK
+
+Spring collection
+---------------
+
+TK
 
 Authors
 =======
