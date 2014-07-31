@@ -63,15 +63,27 @@ Three survey components are collected in late winter, generally in February:
 
 * **Student Financial Aid**
 
-  TK
+  This component includes data about undergraduate students who receive financial aid and how much aid those students receive. 
+
+  The SFA component consists of multiple parts, each counting students and aid for a different subset of a given institution's undergraduate population. Most of these focus on subsets of first-time, full-time undergraduates who are seeking degrees or certificates.
 
 * **Graduation Rates**
 
-  TK
+  This component counts the number of students who start a program at a given institution and complete that program there within a given amount of time.
+
+  Lots of people are interested in this, but pay attention to what it's actually describing.
+
+  First off, this only counts first-time, full-time students seeking degrees or certificates (your traditional freshman-type student). Second, the graduation figures in this component describe students who complete their programs within 150 percent of the normal completion time; that is, if a student starts a typical four-year bachelor's degree program, that student is counted as having graduated if he or she completes that degree within six years. (There's also information about students who complete their programs with 100 percent of normal time, if you're interested in (for example) students of four-year programs who actually manage to graduate within four years.)
+
+  This also counts the number of students who start a program at that institution and then transfer out. (Because there's no federal system keeping track of individual students' outcomes, we can't figure out what happens to students after they transfer out. This means the graduation rate doesn't count all the people who graduate from _anywhere_--just those who graduate from the same place in which they started.)
+
+  Since institutions can't predict the future, data from this component might seem a bit out of date at first glance; the information from a given year's SFA component describes students who started at that institution six years earlier (or three years earlier, in the case of two-year and less-than-two-year institutions).
 
 * **200% Graduation Rates**
 
-  TK
+  This is very similar to the Graduation Rates component described above, but it also measures students who complete their programs within 200 percent of the normal completion time--as well as the 100-percent and the 150-percent totals.
+
+  As with the Graduation Rates component, these don't get reported until a given year of entering freshmen (a "cohort", in IPEDS lingo) has been around for at least the period of time being measured; in other words, the latest year of 200% GR data describes students who entered eight years ago, in the case of four-year institutions.
 
 ### Spring collection ###
 
