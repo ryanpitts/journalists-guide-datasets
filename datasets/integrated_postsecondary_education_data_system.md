@@ -91,15 +91,27 @@ Finally (for one academic year, at least), the remaining survey components are c
 
 * **Fall Enrollment**
 
-  TK
+  This component counts how many students were enrolled in the preceding fall term.
+
+  For institutions that don't work with traditional academic years (which are defined to include semester, trimester and quarter systems as well as "4-1-4" calendars that include a winter intersession between fall and spring semesters), this component instead counts students who were enrolled at any time from Aug. 1 to Oct. 31.
+
+  Different parts of this component break down the information in different ways, but depending on what you're looking for, you can find stuff broken down by race/ethnicity, gender, full-time/part-time status, distance-education enrollment, level (undergraduate, graduate, etc.) and residence.
+
+  Two of the other interesting things collected here are freshman students' states of residence and estimated student-to-faculty ratios for undergraduate programs.
+
+  Watch out, though: The states of residence for freshmen (specifically, first-time, full-time students seeking degrees or certificates, also broken down by whether or not they graduated high school within the past 12 months) is optional in years where the fall occurred in an odd-numbered year. For example, the freshman-residence data for 2012-13 were required, but those data for 2011-12 were optional and generally shouldn't be used for large summary statistics or anything like that.
 
 * **Finance**
 
-  TK
+  This component includes financial data for different institutions, such as revenues and expenses by type, endowments and amounts of scholarships.
+
+  These are collected differently depending on an institution's control (public, private not-for-profit, private for-profit) and (in the case of public institutions) the standards the institution used for its internal accounting.  This means it's probably not wise to compare IPEDS finance figures between institutions without paying a very serious amount of attention to what you're doing.
 
 * **Human Resources**
 
-  TK
+  This component counts institutions' employees by full-time/part-time status, instructional status (including tenure and academic rank, i.e., professor, assistant professor, etc.), race/ethnicity, gender and how many of those employees were newly hired.
+
+  This also includes salary information for full-time, nonmedical instructional staff.
 
 ## Authors ##
 
