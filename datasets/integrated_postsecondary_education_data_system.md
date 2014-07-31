@@ -17,6 +17,7 @@ The IPEDS collection is mandatory for any institution that participates in [fede
     * Graduation Rates
     * 200% Graduation Rates
   * [Spring collection](#spring-collection)
+* [Sources](#sources)
 * [Authors](#authors)
 
 ## Universe ##
@@ -112,6 +113,10 @@ Finally (for one academic year, at least), the remaining survey components are c
   This component counts institutions' employees by full-time/part-time status, instructional status (including tenure and academic rank, i.e., professor, assistant professor, etc.), race/ethnicity, gender and how many of those employees were newly hired.
 
   This also includes salary information for full-time, nonmedical instructional staff.
+
+## Sources ##
+
+* [2013-14 IPEDS Methodology Report](http://nces.ed.gov/pubs2014/2014067.pdf)
 
 ## Authors ##
 
