@@ -18,6 +18,8 @@ The [Integrated Postsecondary Education Data System](http://nces.ed.gov/ipeds/) 
 * [Sources](#sources)
 * [Release schedule](#release-schedule)
 * [Data tools](#data-tools)
+  * [Raw data files](#raw-data-files)
+  * [Custom data files](#custom-data-files)
 * [Authors](#authors)
 
 ## Universe ##
@@ -142,6 +144,14 @@ Each component gets released three times:
   NCES does not update its "First Look" reports when final data are released.
 
 ## Data tools ##
+
+NCES makes IPEDS data available in a variety of forms in the [IPEDS Data Center](http://nces.ed.gov/ipeds/datacenter/), although the two options you'll probably use most often from that site are "Download Survey Data Files", which provides links to the raw data, and "Download Custom Data Files", which lets you select a list of institutions and a list of variables from various years to retrieve for those institutions.
+
+### Raw data files ###
+
+TK
+
+### Custom data files ###
 
 TK
 
