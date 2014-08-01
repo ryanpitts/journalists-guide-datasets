@@ -125,19 +125,25 @@ components collected in the fall are released together.
 
 Each component gets released three times:
 
-* **Preliminary**: The first release, about six or seven months after the data were collected. (For example, the 2013-14 winter collection (closed Feb. 26, 2014) has a scheduled preliminary release in September 2014.)
+* **Preliminary**
+
+  The first release, about six or seven months after the data were collected. (For example, the 2013-14 winter collection (closed Feb. 26, 2014) has a scheduled preliminary release in September 2014.)
 
   Preliminary data have not finished going through NCES quality control, and preliminary releases do not include any **imputed data**, which are NCES' attempts at filling in reasonable guesses for institutions that did not respond to the survey.
 
   NCES uses preliminary data to produce its "First Look" reports in order to release those reports in a relatively timely manner; those reports are then updated with provisional data once those are released.
 
-* **Provisional**: The second release, a few months after the preliminary release. (For example, the 2013-14 fall collection had preliminary and provisional releases both in the summer of 2014.)
+* **Provisional**
+
+  The second release, a few months after the preliminary release. (For example, the 2013-14 fall collection had preliminary and provisional releases both in the summer of 2014.)
 
   Provisional data include imputed data for those institutions that didn't respond to the survey, and all of the data have finished going through NCES quality control.
 
   In general, these are the tables you'll want to use if you want to use relatively reliable data for the most recently available year.
 
-* **Final**: The year after a given component gets collected, the reporting institutions have a chance to revise their responses (if they notice a mistake, etc.). Those edits go through NCES quality control again, and the data are rereleased as final.
+* **Final**
+
+  The year after a given component gets collected, the reporting institutions have a chance to revise their responses (if they notice a mistake, etc.). Those edits go through NCES quality control again, and the data are rereleased as final.
 
   Because of this schedule, it takes at least a year and a half for data to go from collection to final release.
 
