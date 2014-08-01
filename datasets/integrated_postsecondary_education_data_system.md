@@ -16,6 +16,8 @@ The [Integrated Postsecondary Education Data System](http://nces.ed.gov/ipeds/) 
     * 200% Graduation Rates
   * [Spring collection](#spring-collection)
 * [Sources](#sources)
+* [Release schedule](#release-schedule)
+* [Data tools](#data-tools)
 * [Authors](#authors)
 
 ## Universe ##
@@ -113,6 +115,14 @@ Finally (for one academic year, at least), the remaining survey components are c
   This component counts institutions' employees by full-time/part-time status, instructional status (including tenure and academic rank, i.e., professor, assistant professor, etc.), race/ethnicity, gender and how many of those employees were newly hired.
 
   This also includes salary information for full-time, nonmedical instructional staff.
+
+## Release schedule ##
+
+TK
+
+## Data tools ##
+
+TK
 
 ## Sources ##
 
