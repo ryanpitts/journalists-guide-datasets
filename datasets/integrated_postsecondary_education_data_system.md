@@ -2,8 +2,6 @@
 
 The [Integrated Postsecondary Education Data System](http://nces.ed.gov/ipeds/) is a collection of surveys for most of the colleges and universities in the United States. It's conducted by the [National Center for Education Statistics](http://nces.ed.gov/), which is a part of the [U.S. Department of Education](http://www.ed.gov/).
 
-The IPEDS collection is mandatory for any institution that participates in [federal student financial aid programs](http://en.wikipedia.org/wiki/Title_IV). Other institutions can (and do) choose to report to IPEDS, mostly because that's how they get included in federal data tools such as [College Navigator](http://nces.ed.gov/collegenavigator/) that are more geared toward prospective students and their families.
-
 ## In This Guide ##
 
 * [Universe](#universe)
@@ -22,7 +20,9 @@ The IPEDS collection is mandatory for any institution that participates in [fede
 
 ## Universe ##
 
-TK
+IPEDS includes all institutions participating in any Title IV federal student financial aid programs, such as federal loans, Pell Grants and work-study programs.
+
+The non-Title IV U.S. service academies (West Point, the Naval Academy, the Air Force Academy and the Coast Guard Academy) also are included in IPEDS, as are other non-Title IV institutions that voluntarily report to IPEDS in order to be included in [College Navigator](http://nces.ed.gov/collegenavigator), which is a Department of Education tool geared toward prospective students and their parents.
 
 ## Surveys ##
 
@@ -117,6 +117,7 @@ Finally (for one academic year, at least), the remaining survey components are c
 ## Sources ##
 
 * [2013-14 IPEDS Methodology Report](http://nces.ed.gov/pubs2014/2014067.pdf)
+* [What are Title IV Programs?](http://federalstudentaid.ed.gov/site/front2back/programs/programs/fb_03_01_0030.htm)
 
 ## Authors ##
 
