@@ -37,7 +37,7 @@ The 5-year release provides data for all geographies regardless of size. If you 
 ### Comparing ACS data from different releases
 Any time you compare ACS data, it is important to keep the sampling method for each release in mind. The 2012 1-year release, for example, is derived from responses to the 2012 survey alone. The 2012 3-year release is derived from responses from 2010 through 2012, and the 2012 5-year release goes back further still, producing estimates based on data from 2008 through 2012.
 
-Because of this, you should never compare data from different release levels.
+Because of this, you should [never compare data from different release levels](http://www.census.gov/acs/www/guidance_for_data_users/comparing_data/).
 
 ### Comparing ACS data from different geographies
 If you are comparing data from different places (even if they're the same type of geography), you'll need to get all your data from the release that contains the smallest place in your comparison.
