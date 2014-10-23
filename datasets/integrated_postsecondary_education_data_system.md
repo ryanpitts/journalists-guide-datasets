@@ -157,7 +157,15 @@ NCES makes IPEDS data available in a variety of forms in the [IPEDS Data Center]
 
 ### Raw data files ###
 
-TK
+The raw files, or "survey data files" as they're known in the [IPEDS Data Center](http://nces.ed.gov/ipeds/datacenter/), are just that--full copies of IPEDS tables as NCES maintains them, available in a few different formats (Stata, SPSS and good ol' CSV) with good supporting documentation (the "dictionary" file listed with each table).
+
+This gives you a lot of flexibility to use whatever tools and processes are familiar to you when analyzing this data; personally, I (JCM) prefer importing all of the CSVs into a MySQL database since that makes it especially simple to join various tables together.
+
+Most tables are named with a prefix of a few letters (and sometimes numbers) followed by the academic year in which its contents were collected (and an optional suffix). For example, the table that simply lists names and addresses of colleges and universities (along with all kinds of other useful top-line things--such as whether they're public or private, two-year or four-year) always has the prefix `HD`, but the one collected in the fall of 2012 (i.e., the 2012-13 academic year) is called `HD2012`.
+
+Only one table (the `HD{year}` table, also known in various places as the "header" or "directory" table) has useful human-readable identifiers such as institution name or address; all the rest expect you to join somehow on the `UNITID` field, which is the six-digit identifier for an institution that reports to IPEDS. It's released as part of the Institutional Characteristics survey, so it's in the first batch of tables you'll get for the current academic year; even if you're missing a lot of other tables, you'll have (or quickly go and get) this one.
+
+(None of the UNITID values begins with a zero, so it's no big deal if you accidentally import your UNITID column as an integer--certainly less of a concern than for ZIP codes or FIPS codes. On that note, while the header table does include state postal abbreviations, other tables that refer to various states (such as in the context of freshman students' states of residence) use state FIPS codes for that purpose. Yes, FIPS codes also are in the header table.)
 
 ### Custom data files ###
 
