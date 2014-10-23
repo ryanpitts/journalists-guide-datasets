@@ -118,6 +118,8 @@ Finally (for one academic year, at least), the remaining survey components are c
 
   This also includes salary information for full-time, nonmedical instructional staff.
 
+Finally, keep in mind that all of this is survey information; if you see something in IPEDS, it's ultimately self-reported (or based on something that is). There can be errors and inconsistencies in some fields, although NCES tries admirably to keep that to a minimum (more on that in the next section).
+
 ## Release schedule ##
 
 IPEDS data are released according to when they were collected; for example, all
