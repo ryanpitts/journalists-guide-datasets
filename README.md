@@ -6,6 +6,7 @@ A collection of introductions to various datasets, giving journalists some frien
 ## Datasets
 * [American Community Survey](/datasets/american_community_survey.md)
 * [Federal Election Commission](/datasets/federal_election_commission.md)
+* [Defense Logistics Agency's 1033 program data](/datasets/defense_logistics_agency_1033_program.md)
 
 ## Notes
 * [Notes from the Session](https://etherpad.mozilla.org/srccon-notes)
