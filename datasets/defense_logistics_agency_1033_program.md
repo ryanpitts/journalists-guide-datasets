@@ -99,7 +99,7 @@ When the Glendora, Calif. Police Department received two Peacekeeper-style armor
 [Data smells](https://source.opennews.org/en-US/learning/distrust-your-data/)
 =============================================================================
 
-* **Regarding the Nov. 21, 2104 Defense Logistics Agency data**:
+* **Regarding the Nov. 21, 2014 Defense Logistics Agency data**:
 
     * The data can't tell us how the equipment is used by a law enforcement agency nor can it tell us an items condition. So a helicopter or a vehicle that ends up with law enforcement agency could be fully functioning or it could be a shell of its useful self. Either way, original value when the item entered the supply chain is what will be displayed.
 
@@ -122,7 +122,7 @@ When the Glendora, Calif. Police Department received two Peacekeeper-style armor
 Known data releases
 ===================
 
-* [Nov. 21, 2104 Defense Logistics Agency data](http://www.dispositionservices.dla.mil/EFOIA-Privacy/Pages/ereadingroom.aspx)
+* [Nov. 21, 2014 Defense Logistics Agency data](http://www.dispositionservices.dla.mil/EFOIA-Privacy/Pages/ereadingroom.aspx)
     * On or about Nov. 21 the Defense Logistics Agency released data current through Nov. 14, 2014 that details controlled and non-controlled dispursements to the local law enforcement level.
 
 
