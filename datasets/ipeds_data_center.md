@@ -162,3 +162,10 @@ the columns by variable name first, and then extract the year.
 
 The easiest way to update reports is to modify the `UID` and `MVL` files and
 generate a new report.
+
+
+About the author
+----------------
+
+Chris Chang is a developer at The Texas Tribune where he used custom data
+reports from IPEDS to help compile their Texas Higher Ed Explorer.
