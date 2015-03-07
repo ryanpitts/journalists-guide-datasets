@@ -179,4 +179,4 @@ TK
 
 ## Authors ##
 
-Justin Myers is a developer on the data and interactives team at [The Chronicle of Higher Education](http://chronicle.com/) and [The Chronicle of Philanthropy](http://philanthropy.com/).
+Justin Myers learned about IPEDS in a past life as a developer on the data and interactives team at [The Chronicle of Higher Education](http://chronicle.com/) and [The Chronicle of Philanthropy](http://philanthropy.com/).
